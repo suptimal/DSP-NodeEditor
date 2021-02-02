@@ -4,6 +4,8 @@ var item = {}
 var recipe = {}
 var icon_color = {}
 
+var icon_size = Vector2(42, 42)
+
 #item id => iitem name. We use itemid as id for slots in nodes
 var item_id = {}
 
@@ -22,7 +24,6 @@ func _ready():
 	_setup_item_data(recipedump["item"])
 	_setup_recipe_data(recipedump["recipe"])
 	_setup_color_data(raw_color)
-	print(JSON.print(item["graphite"], "  "))
 
 func _setup_color_data(raw_color):
 	for iname in raw_color:

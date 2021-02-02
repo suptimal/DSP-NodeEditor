@@ -1,0 +1,65 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://components/RecipeDisplay.gd" type="Script" id=1]
+[ext_resource path="res://icons/arrow.png" type="Texture" id=2]
+[ext_resource path="res://icons/accelerator-1.png" type="Texture" id=3]
+[ext_resource path="res://icons/accelerator-2.png" type="Texture" id=4]
+
+[node name="RecipeDisplay" type="HBoxContainer"]
+margin_right = 38.0
+margin_bottom = 37.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Input" type="HBoxContainer" parent="."]
+margin_right = 42.0
+margin_bottom = 42.0
+
+[node name="TextureRect" type="TextureRect" parent="Input"]
+margin_right = 42.0
+margin_bottom = 42.0
+rect_min_size = Vector2( 42, 42 )
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 6
+
+[node name="TimeContainer" type="CenterContainer" parent="."]
+margin_left = 46.0
+margin_right = 76.0
+margin_bottom = 42.0
+size_flags_horizontal = 3
+
+[node name="VBox" type="VBoxContainer" parent="TimeContainer"]
+margin_top = 4.0
+margin_right = 30.0
+margin_bottom = 38.0
+
+[node name="Label" type="Label" parent="TimeContainer/VBox"]
+margin_right = 30.0
+margin_bottom = 14.0
+text = "12"
+align = 1
+
+[node name="Arrow" type="TextureRect" parent="TimeContainer/VBox"]
+margin_top = 18.0
+margin_right = 30.0
+margin_bottom = 34.0
+rect_min_size = Vector2( 30, 16 )
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 6
+
+[node name="Output" type="HBoxContainer" parent="."]
+margin_left = 80.0
+margin_right = 122.0
+margin_bottom = 42.0
+
+[node name="TextureRect2" type="TextureRect" parent="Output"]
+margin_right = 42.0
+margin_bottom = 42.0
+rect_min_size = Vector2( 42, 42 )
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 6

@@ -1,16 +1,14 @@
 extends GraphEdit
 
+onready var header_box = get_zoom_hbox()
+onready var item_list_container = $CenterContainer
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	var item_list_toggle = Button.new()
+	header_box.add_child(item_list_toggle)
+	item_list_toggle.text = "<<< ITEMLIST >>>"
+	
+	item_list_toggle.connect("pressed", self, "toggle_item_list")
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func toggle_item_list():
+	item_list_container.visible = not item_list_container.visible

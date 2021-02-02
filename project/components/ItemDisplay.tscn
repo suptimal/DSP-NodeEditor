@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://components/ItemDisplay.gd" type="Script" id=1]
+[ext_resource path="res://icons/wind-turbine.png" type="Texture" id=2]
+
+[node name="ItemDisplay" type="HBoxContainer"]
+margin_right = 141.0
+margin_bottom = 42.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Icon" type="TextureRect" parent="."]
+margin_right = 42.0
+margin_bottom = 42.0
+rect_min_size = Vector2( 42, 42 )
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 6
+
+[node name="Label" type="Label" parent="."]
+margin_left = 46.0
+margin_top = 14.0
+margin_right = 131.0
+margin_bottom = 28.0
+text = "Wind Turbine"
+max_lines_visible = 3
