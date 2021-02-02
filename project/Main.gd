@@ -9,6 +9,6 @@ func _ready():
 	item_list_toggle.text = "<<< ITEMLIST >>>"
 	
 	item_list_toggle.connect("pressed", self, "toggle_item_list")
-
+#
 func toggle_item_list():
 	item_list_container.visible = not item_list_container.visible

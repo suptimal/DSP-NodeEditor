@@ -15,7 +15,8 @@ func _ready():
 	var text = file.get_as_text()
 	file.close()
 	var recipedump = JSON.parse(text).result
-	
+	print("loaded data/dsp_recipedumper.json")
+
 	file.open("res://data/icon_color.json", file.READ)
 	text = file.get_as_text()
 	file.close()
