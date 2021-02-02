@@ -1,0 +1,14 @@
+--2021-02-02 17:04:27--  https://gist.githubusercontent.com/ragzilla/2d5b56b15ad5ec304f4e1c1bc298722f/raw/
+Resolving gist.githubusercontent.com (gist.githubusercontent.com)... 151.101.192.133, 151.101.128.133, 151.101.64.133, ...
+Connecting to gist.githubusercontent.com (gist.githubusercontent.com)|151.101.192.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 193654 (189K) [text/plain]
+Saving to: ‘index.html’
+
+     0K .......... .......... .......... .......... .......... 26% 2,38M 0s
+    50K .......... .......... .......... .......... .......... 52% 2,64M 0s
+   100K .......... .......... .......... .......... .......... 79% 10,8M 0s
+   150K .......... .......... .......... .........            100% 6,89M=0,05s
+
+2021-02-02 17:04:27 (3,77 MB/s) - ‘index.html’ saved [193654/193654]
+
