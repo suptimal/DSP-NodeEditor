@@ -19,6 +19,10 @@ config/name="DSP-NodeEditor"
 run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Global="*res://Global.gd"
+
 [rendering]
 
 quality/driver/driver_name="GLES2"
