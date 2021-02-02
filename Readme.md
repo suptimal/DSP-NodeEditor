@@ -3,6 +3,8 @@ Dyson Sphere Program - Node Editor
 
 Helper tool to figure out recipes in DSP
 
+https://suptimal.github.io/DSP-NodeEditor/
+
 
 credit
 ======
