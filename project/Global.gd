@@ -9,7 +9,7 @@ var icon_size = Vector2(42, 42)
 #item id => iitem name. We use itemid as id for slots in nodes
 var item_id = {}
 
-func _ready():
+func _ready():	
 	var file = File.new()
 	file.open("res://data/dsp_recipedumper.json", file.READ)
 	var text = file.get_as_text()
@@ -44,20 +44,13 @@ func _setup_item_data(item_raw):
 		item[iname]["intermidiate"] = []
 	
 		# set icon graphic
-		var icon = "res://icons/%s.png" % iname
-		if not _file_exists(icon):
-			icon = "res://icons/unknown.png"
+		var icon = load("res://icons/%s.png" % iname)
+		if not icon:
+			icon =  load("res://icons/unknown.png")
+		item[iname]["icon"] = icon
 
-		item[iname]["icon"] = load(icon)
-			
 		item_id[id] = iname
-		
 		id += 1
-
-func _file_exists(filename):
-		var file_check = File.new()
-		var do_file_exists = file_check.file_exists(filename)
-		return do_file_exists
 
 func _setup_recipe_data(recipe_raw):
 	recipe = recipe_raw
